@@ -4,6 +4,8 @@
 
 独自のリポジトリ運用ガイドライン
 
+[Available in English](https://github.com/nui-n/repository-guidelines/blob/main/README.en.md)
+
 </div>
 
 ---
