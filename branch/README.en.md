@@ -54,11 +54,13 @@
 Long-lived foundational branches that always exist in the repository
 
 ### main
+
 - Branch for integation
 - Essentially the collection of commits made in historical `work/*` branches; you can trace nearly all commits by looking here
 - Accepts merges from `work/*` and `hotfix/*` only; direct commits that bypass those are not accepted
 
 ### stable
+
 - Branch for archival storage
 - A collection of snapshots indexed by tags; commits (count) = releases (count)
 - Accepts merges from `main` and `hotfix/*` only; direct commits and merges from `work/*` are not accepted
@@ -68,11 +70,13 @@ Long-lived foundational branches that always exist in the repository
 Short-lived branches created for work
 
 ### work/*
+
 - Branches for general work
 - Created for general work (features, docs, workflows, etc.); temporary and deleted after merging.
 - Commit directly to add changes and merge into `main`
 
 ### hotfix/*
+
 - Branches for emergency fixes
 - Created to address issues discovered after release; temporary and deleted after merging
 - Commit directly for fix releases and merge into both `stable` and `main`
