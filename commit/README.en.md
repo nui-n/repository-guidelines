@@ -1,5 +1,10 @@
 # Commit
 
+## Frequency
+
+- One commit per task step
+- One commit per file
+
 ## Message
 
 ### Format

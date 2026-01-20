@@ -1,5 +1,10 @@
 # Commit
 
+## Frequency
+
+- 工程毎に1コミット
+- ファイル毎に1コミット
+
 ## Message
 
 ### Format
