@@ -15,35 +15,35 @@
   </thead>
   <tbody>
     <tr>
-      <td>main</td>
+      <td><code>main</code></td>
       <td>集約</td>
       <td>中央統合ブランチ</td>
       <td>恒久</td>
       <td>—</td>
-      <td>stable</td>
+      <td><code>stable</code></td>
     </tr>
     <tr>
-      <td>work/*</td>
+      <td><code>work/*</code></td>
       <td>作業</td>
       <td>単一のタスク（新機能、ドキュメントなど）のための短命な作業ブランチ — ひとつのIssue/PRに関連付けられる</td>
       <td>一時的</td>
-      <td>main</td>
-      <td>main</td>
+      <td><code>main</code></td>
+      <td><code>main</code></td>
     </tr>
     <tr>
-      <td>hotfix/*</td>
+      <td><code>hotfix/*</code></td>
       <td>緊急修正</td>
       <td>現行リリースに対する修正のための短命な作業ブランチ</td>
       <td>一時的</td>
-      <td>stable</td>
-      <td>stable, main</td>
+      <td><code>stable</code></td>
+      <td><code>stable</code>, <code>main</code></td>
     </tr>
     <tr>
-      <td>stable</td>
+      <td><code>stable</code></td>
       <td>保管</td>
       <td>過去から現在までの全リリースを保持するブランチ — 安定性のあるコードが集積されている</td>
       <td>恒久</td>
-      <td>main</td>
+      <td><code>main</code></td>
       <td>—</td>
     </tr>
   </tbody>
@@ -53,13 +53,13 @@
 
 寿命がなく、リポジトリに常に存在する基盤的なブランチ
 
-### main
+### `main`
 
 - 集約のためのブランチ
 - 基本的に歴代の`work/*`ブランチでされたコミットの集合であり、ここを見ればほぼすべてのコミットを追跡・確認できる
 - マージは`work/*`と`hotfix/*`の二か所から受け入れ、それらを介さない直接のコミットは受け入れない
 
-### stable
+### `stable`
 
 - 集積（保管）のためのブランチ
 - タグでインデックスされたスナップショットの集合であり、コミット(数)=リリース(数)の関係
@@ -69,13 +69,13 @@
 
 寿命のある、作業のために作られる一時的なブランチ
 
-### work/*
+### `work/*`
 
 - 作業のためのブランチ
 - 新しい機能や要素、改善を作業するために作られ、マージ後は削除される一時的なブランチ
 - 変更追加のため直接コミットして`main`にマージする
 
-### hotfix/*
+### `hotfix/*`
 
 - 緊急修正のためのブランチ
 - リリース後に発覚した問題に対処するために作られ、マージ後は削除される一時的なブランチ

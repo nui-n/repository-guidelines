@@ -25,12 +25,12 @@ This repository documents the rules nuin should follow when operating the reposi
 
 ### Branch
 
-| Name     | Description                                                    |
-|----------|----------------------------------------------------------------|
-| main     | Primary branch where canonical project content is maintained   |
-| work/*   | Temporary branches for changes (features, edits, improvements) |
-| hotfix/* | Temporary branches for urgent fixes                            |
-| stable   | Branch for accumulating/storing release-ready snapshots        |
+| Name       | Description                                                    |
+|------------|----------------------------------------------------------------|
+| `main`     | Primary branch where canonical project content is maintained   |
+| `work/*`   | Temporary branches for changes (features, edits, improvements) |
+| `hotfix/*` | Temporary branches for urgent fixes                            |
+| `stable`   | Branch for accumulating/storing release-ready snapshots        |
 
 See the [branch](https://github.com/nui-n/repository-guidelines/blob/main/branch/README.en.md) for details
 
