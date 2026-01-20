@@ -1,0 +1,82 @@
+# Branch
+
+## Quick Legend
+
+<table>
+  <thead>
+    <tr>
+      <th>ブランチ</th>
+      <th>役割</th>
+      <th>説明</th>
+      <th>寿命</th>
+      <th>分岐元</th>
+      <th>マージ先</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>main</code></td>
+      <td>集約</td>
+      <td>中央統合ブランチ</td>
+      <td>恒久的</td>
+      <td>—</td>
+      <td><code>stable</code></td>
+    </tr>
+    <tr>
+      <td><code>work/*</code></td>
+      <td>作業</td>
+      <td>単一のタスク（新機能、ドキュメントなど）のための短命な作業ブランチ — ひとつのIssue/PRに関連付けられる</td>
+      <td>一時的</td>
+      <td><code>main</code></td>
+      <td><code>main</code></td>
+    </tr>
+    <tr>
+      <td><code>hotfix/*</code></td>
+      <td>緊急修正</td>
+      <td>現行リリースに対する修正のための短命な作業ブランチ</td>
+      <td>一時的</td>
+      <td><code>stable</code></td>
+      <td><code>stable</code>, <code>main</code></td>
+    </tr>
+    <tr>
+      <td><code>stable</code></td>
+      <td>保管</td>
+      <td>過去から現在までの全リリースを保持するブランチ — 安定性のあるコードが集積されている</td>
+      <td>恒久的</td>
+      <td><code>main</code></td>
+      <td>—</td>
+    </tr>
+  </tbody>
+</table>
+
+## Main Branches
+
+寿命がなく、リポジトリに常に存在する基盤的なブランチ
+
+### `main`
+
+- 集約のためのブランチ
+- 基本的に歴代の`work/*`ブランチでされたコミットの集合であり、ここを見ればほぼすべてのコミットを追跡・確認できる
+- マージは`work/*`と`hotfix/*`の二か所から受け入れ、それらを介さない直接のコミットは受け入れない
+
+### `stable`
+
+- 集積（保管）のためのブランチ
+- タグでインデックスされたスナップショットの集合であり、コミット(数)=リリース(数)の関係
+- マージは`main`と`hotfix/*`の二か所から受け入れ、直接のコミット・`work/*`からのマージは受け入れない
+
+## Supporting Branches
+
+寿命のある、作業のために作られる一時的なブランチ
+
+### `work/*`
+
+- 作業のためのブランチ
+- 新しい機能や要素、改善を作業するために作られ、マージ後は削除される一時的なブランチ
+- 変更追加のため直接コミットして`main`にマージする
+
+### `hotfix/*`
+
+- 緊急修正のためのブランチ
+- リリース後に発覚した問題に対処するために作られ、マージ後は削除される一時的なブランチ
+- リリース修正のため直接コミットして`stable`と`main`の両方にマージする
