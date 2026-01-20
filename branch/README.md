@@ -18,7 +18,7 @@
       <td><code>main</code></td>
       <td>集約</td>
       <td>中央統合ブランチ</td>
-      <td>恒久</td>
+      <td>恒久的</td>
       <td>—</td>
       <td><code>stable</code></td>
     </tr>
@@ -42,7 +42,7 @@
       <td><code>stable</code></td>
       <td>保管</td>
       <td>過去から現在までの全リリースを保持するブランチ — 安定性のあるコードが集積されている</td>
-      <td>恒久</td>
+      <td>恒久的</td>
       <td><code>main</code></td>
       <td>—</td>
     </tr>
