@@ -13,6 +13,7 @@ Custom repository operation guidelines
 - [Overview](#overview)
 - [Guidelines](#guidelines)
   - [Branch](#branch)
+  - [Commit](#commit)
 - [License](#license)
 
 ---
@@ -33,6 +34,22 @@ This repository documents the rules nuin should follow when operating the reposi
 | `stable`   | Branch for accumulating/storing release-ready snapshots        |
 
 See the [branch](https://github.com/nui-n/repository-guidelines/blob/main/branch/README.en.md) for details
+
+### Commit
+
+The basic rule is to commit per task step, and the commit message format is as follows:
+
+```
+<Command>: <Subject, Description>
+```
+
+| Name          | Description                                                                                             |
+|---------------|---------------------------------------------------------------------------------------------------------|
+| `Command`     | A prefix that succinctly represents the commit by combining a type identifier with a helper symbol; an action and a modifier. |
+| `Subject`     | A title or summary that clearly presents the commit's content.                                          |
+| `Description` | A place to write more detailed information that cannot be conveyed by the `Subject` alone.             |
+
+See the [commit](https://github.com/nui-n/repository-guidelines/blob/main/commit/README.en.md) for details
 
 ## License
 
