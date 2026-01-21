@@ -56,17 +56,17 @@
 
 ### Example
 
-```jsonc
-$+: `README.md`の追加 // docs
-+!: 四則演算の追加 // feat
-*: 0で割れないように修正 // fix
-+!: 一次関数の追加 // feat
-*!: 一次関数に切片の追加 // fix
-*: 切片にデフォルト値を追加 // fix
-+?: メモリ機能の追加 // feat (experimental)
-^: 四則演算の分岐を`if`文から`switch`文に変更 // refactor
-^!: ファイルの分割 // refactor
-=*: コメントのタイポ修正 // style
->+: `-minify`オプションの追加 // build
->+: キャッシュの追加 // ci
+```ini
+$+: `README.md`の追加 # docs
++!: 四則演算の追加 # feat
+*: 0で割れないように修正 # fix
++!: 一次関数の追加 # feat
+*!: 一次関数に切片の追加 # fix
+*: 切片にデフォルト値を追加 # fix
++?: メモリ機能の追加 # feat (experimental)
+^: 四則演算の分岐を`if`文から`switch`文に変更 # refactor
+^!: ファイルの分割 # refactor
+=*: コメントのタイポ修正 # style
+>+: `-minify`オプションの追加 # build
+>+: キャッシュの追加 # ci
 ```

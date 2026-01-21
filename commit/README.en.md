@@ -56,17 +56,17 @@
 
 ### Example
 
-```jsonc
-$+: add `README.md` // docs
-+!: add arithmetic operations // feat
-*: fix to prevent division by 0 // fix
-+!: add linear functions // feat
-*!: add a y-intercept to a linear function // fix
-*: set default intercept // fix
-+?: add memory feature // feat (experimental)
-^: replace `if` with `switch` for arithmetic // refactor
-^!: split into modules // refactor
-=*: fix comment typo // style
->+: add `-minify` option // build
->+: add caching // ci
+```ini
+$+: add `README.md` # docs
++!: add arithmetic operations # feat
+*: fix to prevent division by 0 # fix
++!: add linear functions # feat
+*!: add a y-intercept to a linear function # fix
+*: set default intercept # fix
++?: add memory feature # feat (experimental)
+^: replace `if` with `switch` for arithmetic # refactor
+^!: split into modules # refactor
+=*: fix comment typo # style
+>+: add `-minify` option # build
+>+: add caching # ci
 ```
