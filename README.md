@@ -13,6 +13,7 @@
 - [Overview](#overview)
 - [Guidelines](#guidelines)
   - [Branch](#branch)
+  - [Commit](#commit)
 - [License](#license)
 
 ---
@@ -33,6 +34,22 @@ nuinが自身のリポジトリを運用していく上で、守るべき規則�
 | `stable`   | リリースが行われる集積（保管）用のブランチ          |
 
 詳しくは[branch](https://github.com/nui-n/repository-guidelines/blob/main/branch/README.md)を参照
+
+### Commit
+
+基本は工程毎にコミットを行い、メッセージフォーマットは以下のようになっている。
+
+```
+<Command>: <Subject, Description>
+```
+
+| 名称          | 説明                                                                                        |
+|---------------|--------------------------------------------------------------------------------------------|
+| `Command`     | タイプ識別子とアクション・修飾子からなる補助記号の二つを組み合わせ、コミット内容を簡易的に表す接頭辞 |
+| `Subject`     | コミット内容をわかりやすく表示するタイトル、要約                                                |
+| `Description` | `Subject`だけでは伝えられないより詳細な内容を記述する場                                         |
+
+詳しくは[commit](https://github.com/nui-n/repository-guidelines/blob/main/commit/README.md)を参照
 
 ## License
 
