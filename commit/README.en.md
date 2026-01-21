@@ -42,7 +42,9 @@
 
 #### Separator
 
-- `: `
+`: `
+
+- Require a space after the colon
 
 #### Subject
 
