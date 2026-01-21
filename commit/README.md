@@ -54,7 +54,7 @@
 
 - 特に制限なし
 
-### Usage
+### Example
 
 ```jsonc
 $+: `README.md`の追加 // docs

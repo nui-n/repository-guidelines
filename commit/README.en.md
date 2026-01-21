@@ -54,7 +54,7 @@
 
 - No restrictions
 
-### Usage
+### Example
 
 ```jsonc
 $+: add `README.md` // docs
