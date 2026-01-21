@@ -26,7 +26,7 @@
 - `$` - Documentation
 - `>` - Commands / Workflow
 
-##### Specifier（補助記号）
+##### Specifier（Auxiliary Symbol）
 
 ###### Action
 
